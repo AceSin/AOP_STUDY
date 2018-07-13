@@ -5,7 +5,6 @@ import java.util.List;
 public abstract class UserPerformance {
 
     private long before(){
-
         return System.currentTimeMillis();
     }
 
@@ -19,7 +18,6 @@ public abstract class UserPerformance {
         long start = before();
         List<User> users = findAll();
         after(start);
-
         return users;
     }
 
